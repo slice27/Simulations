@@ -14,12 +14,10 @@ namespace Simulation
 	public:
 		pSimulationResult()
 		{
-
 		}
 
 		virtual ~pSimulationResult()
 		{
-
 		}
 
 	protected:
