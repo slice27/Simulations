@@ -144,11 +144,13 @@
     <ClCompile Include="Simulation.cpp" />
     <ClCompile Include="SimulationParams.cpp" />
     <ClCompile Include="SimulationResult.cpp" />
+    <ClCompile Include="SimulationRunner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Simulation.h" />
     <ClInclude Include="SimulationParams.h" />
     <ClInclude Include="SimulationResult.h" />
+    <ClInclude Include="SimulationRunner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
