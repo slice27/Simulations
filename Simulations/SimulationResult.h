@@ -22,8 +22,9 @@ namespace Simulation
 	class SimulationResult
 	{
 	public:
-		SimulationResult();
+		SimulationResult(uint64_t duration = 0);
 		virtual ~SimulationResult();
+		SimulationResult(const SimulationResult& simulation);
 
 		/**
 		 * @brief Returns the duration of this simulation
@@ -32,6 +33,15 @@ namespace Simulation
 		 * @return the number of milliseconds that this simulation took to execute.
 		 */
 		uint64_t GetDuration();
+
+		/**
+		 * @brief Implements an addition operator
+		 * <p>
+		 * This method overloads the operator+ operator, such that all SimulationResults can be combined for a total tally of the
+		 * full simulation.  This will sum the values of this SimulationResult and addition
+		 * @param addition The value to be summed with this SimulationResult
+		 */
+		virtual SimulationResult operator+(const SimulationResult& addition);
 
 	private:
 		std::unique_ptr<pSimulationResult> p;
