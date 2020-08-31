@@ -2,7 +2,7 @@
  * File: Simulation.cpp
  * Purpose: To implement the generic interface for simluations
  * Author: Chris Chaffey
- * Copyright: Copyright © 2020 Chris Chaffey. All rights reserved.
+ * Copyright: Copyright ï¿½ 2020 Chris Chaffey. All rights reserved.
  */
 
 #include <future>
@@ -15,8 +15,9 @@ namespace Simulation
 	class pSimulation
 	{
 	public:
-		pSimulation(std::shared_ptr<SimulationParams> params) :
-			mParams(params)
+		pSimulation(uint64_t executions, std::shared_ptr<SimulationParams> params) :
+			mParams(params),
+			mNumExecutions(executions)
 		{
 		}
 
@@ -28,13 +29,14 @@ namespace Simulation
 		friend class Simulation;
 
 		std::shared_ptr<SimulationParams> mParams;
+		uint64_t mNumExecutions;
 	};
 
 
 
-	Simulation::Simulation(std::shared_ptr<SimulationParams> params)
+	Simulation::Simulation(uint64_t executions, std::shared_ptr<SimulationParams> params)
 	{
-		p = std::make_unique<pSimulation>(params);
+		p = std::make_unique<pSimulation>(executions, params);
 	}
 
 	Simulation::~Simulation()
