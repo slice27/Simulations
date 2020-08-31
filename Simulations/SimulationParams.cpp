@@ -9,12 +9,23 @@
 
 namespace Simulation
 {
-	class pSimulationParams
-	{
-	public:
-		pSimulationParams();
-		virtual ~pSimulationParams();
 
-	protected:
-	};
+class pSimulationParams
+{
+public:
+	pSimulationParams();
+	virtual ~pSimulationParams();
+
+protected:
+};
+
+SimulationParams::SimulationParams()
+{
+}
+
+SimulationParams::~SimulationParams()
+{
+	
+}
+
 }
