@@ -4,6 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="SnakesAndLadders" projectFiles="true">
+        <itemPath>SnakesAndLaddersParams.h</itemPath>
+        <itemPath>SnakesAndLaddersResults.h</itemPath>
+        <itemPath>SnakesAndLaddersSimulator.h</itemPath>
+      </logicalFolder>
       <itemPath>Simulation.h</itemPath>
       <itemPath>SimulationParams.h</itemPath>
       <itemPath>SimulationResult.h</itemPath>
@@ -16,6 +21,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="SnakesAndLadders" projectFiles="true">
+        <itemPath>SnakesAndLaddersParams.cpp</itemPath>
+        <itemPath>SnakesAndLaddersResults.cpp</itemPath>
+        <itemPath>SnakesAndLaddersSimulator.cpp</itemPath>
+      </logicalFolder>
       <itemPath>Simulation.cpp</itemPath>
       <itemPath>SimulationParams.cpp</itemPath>
       <itemPath>SimulationResult.cpp</itemPath>
@@ -63,6 +73,18 @@
       </item>
       <item path="SimulationRunner.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="SnakesAndLaddersParams.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersParams.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersResults.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersResults.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersSimulator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersSimulator.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -101,6 +123,18 @@
       <item path="SimulationRunner.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="SimulationRunner.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersParams.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersParams.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersResults.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersResults.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersSimulator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SnakesAndLaddersSimulator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
