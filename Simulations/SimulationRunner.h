@@ -33,7 +33,7 @@ namespace Simulation
          * <p>
          * This function override the maximum number of times this simulation will run as set in the constructor of the Simulation
          * class.
-         * @param maxExecutions The number of times this simulation should be run.
+         * @param [in] maxExecutions The number of times this simulation should be run.
          */
         void SetMaxExecutions(uint64_t maxExecutions);
 
@@ -42,7 +42,7 @@ namespace Simulation
          * <p>
          * This function will override the number of threads this simulation will run on as set in the constructor of the
          * Simulation.
-         * @param numThreads the maximum number of threads on which to execute this simulation
+         * @param [in] numThreads the maximum number of threads on which to execute this simulation
          */
         void SetNumThreads(uint32_t numThreads);
 
@@ -51,7 +51,7 @@ namespace Simulation
          * <p>
          * This function will drive the simulation, starting the appropriate number of threads, and calling the Execute method, and
          * start profiling the execution.
-         * @param params The parameters used by this simulation.
+         * @param [in] params The parameters used by this simulation.
          * @return the duration of executing the total simulation.
          * @see Execute
          */
