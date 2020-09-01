@@ -2,9 +2,10 @@
  * File: SimulationResult.cpp
  * Purpose: To implement the generic interface for simluations
  * Author: Chris Chaffey
- * Copyright: Copyright © 2020 Chris Chaffey. All rights reserved.
+ * Copyright: Copyright ï¿½ 2020 Chris Chaffey. All rights reserved.
  */
 
+#include <iostream>
 #include "SimulationResult.h"
 
 namespace Simulation
@@ -64,5 +65,10 @@ namespace Simulation
 	uint64_t SimulationResult::GetDuration()
 	{
 		return p->mDuration;
+	}
+	
+	void SimulationResult::DisplayResult()
+	{
+		std::cout << "CPU Time: " << p->mDuration << "ms" << std::endl;
 	}
 }

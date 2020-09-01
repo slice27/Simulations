@@ -39,9 +39,17 @@ namespace Simulation
          * <p>
          * This method overloads the operator+ operator, such that all SimulationResults can be combined for a total tally of the
          * full simulation.  This will sum the values of this SimulationResult and addition
-         * @param addition The value to be summed with this SimulationResult
+         * @param [in,out] addition The value to be summed with this SimulationResult
          */
         virtual SimulationResult operator+(const SimulationResult& addition);
+
+        /**
+         * @brief Displays the result of the simulation
+         * <p>
+         * This function will display the result of the current simulation.  This function should be overridden by the derived class
+         * and the derived class should call SimulationResult::DisplayResult() first.
+         */
+        virtual void DisplayResult();
 
     private:
         std::unique_ptr<pSimulationResult> p;
